@@ -1,0 +1,35 @@
+flowchart TD
+    Start([Start Fragebogen]) --> General[Seite 1: Unternehmensprofil & Einteilung]
+    General --> Active{Bereits im Defence-, Sicherheits- oder Dual-Use-Bereich tätig?}
+    Active -->|Ja| J[Pfad J]
+    Active -->|Nein| Planned{Einstieg geplant?}
+    Planned -->|Ja| P[Pfad P]
+    Planned -->|Nein| N[Pfad N]
+
+    N --> NReason[Seite 2: Kein Einstieg geplant<br/>Gründe & optionale Anmerkung]
+    NReason --> EndN([Ende N])
+
+    J --> JMarket[Seite 2: Marktpositionierung J]
+    P --> PMarket[Seite 2: Marktpositionierung P]
+
+    JMarket --> JBarriers[Seite 3: Einstiegserfahrungen & Hürden]
+    PMarket --> PBarriers[Seite 3: Erwartete Einstiegshürden]
+
+    JBarriers --> Procurement[Seite 4: Beschaffung & Regulierungserfahrung]
+    Procurement --> InvestmentJ[Seite 5: Zeitenwende, Investitionen & Förderung]
+    PBarriers --> InvestmentP[Seite 4: Zeitenwende, Investitionen & Förderung]
+
+    InvestmentJ --> TechJ[Technologie & Innovation aktuell]
+    InvestmentP --> TechP[Technologie & Innovation geplant]
+
+    TechJ --> EUJ[Europa, Regionen & Kooperationen]
+    TechP --> EUP[Europa, Regionen & Kooperationen]
+
+    EUJ --> OutlookJ[Herausforderungen & Ausblick]
+    EUP --> OutlookP[Herausforderungen & Ausblick]
+
+    OutlookJ --> FinalJ[ESG, Personal, Standort & Kontakt]
+    OutlookP --> FinalP[ESG, Personal, Standort & Kontakt]
+
+    FinalJ --> EndJ([Ende J])
+    FinalP --> EndP([Ende P])

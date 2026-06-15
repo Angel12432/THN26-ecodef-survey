@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Defence-Fragebogen | Deutschland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-badge"><span class="badge-dot"></span>Vertraulich — Unternehmenserhebung</div>
+      <div class="header-meta">VERSION 4.3 &nbsp;|&nbsp; Abschnittsnavigation</div>
+    </div>
+    <div class="header-main">
+      <div class="header-eyebrow">Bundesrepublik Deutschland</div>
+      <h1>DEFENCE & <span>SICHERHEIT</span><br>FRAGEBOGEN</h1>
+      <p class="header-sub">Dieser Fragebogen passt sich an Ihre Ausgangslage an und führt Sie abschnittsweise durch die relevanten Fragen. Zunächst wird eingeordnet, ob Ihr Unternehmen bereits im Defence-, Sicherheits- oder Dual-Use-Bereich tätig ist, einen Einstieg plant oder aktuell keinen Einstieg vorsieht.</p>
+    </div>
+  </header>
+
+  <div class="progress-bar-wrap" aria-live="polite">
+    <span class="progress-label">Fortschritt</span>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-pct" id="progressPct">0%</span>
+  </div>
+
+  <main id="app">
+    <div class="route-status" id="routeStatus">
+      <span class="info-icon">ℹ</span>
+      <span>Bitte beantworten Sie zunächst die Einstufungsfragen. Danach werden nur die relevanten Fragen angezeigt.</span>
+    </div>
+
+    <div class="validation-message" id="validationMessage"></div>
+
+    <form id="surveyForm" novalidate>
+      <input type="hidden" id="routeInput" name="route" value="" />
+      <div id="surveyRoot"></div>
+
+      <div class="page-nav" aria-label="Abschnittsnavigation">
+        <button class="secondary-btn" id="prevPageBtn" type="button">Zurück</button>
+        <div class="page-indicator" id="pageIndicator">Abschnitt 1</div>
+        <button class="secondary-btn" id="nextPageBtn" type="button">Weiter</button>
+      </div>
+
+      <div class="divider"></div>
+      <div class="submit-wrap">
+        <button class="submit-btn is-hidden" id="submitBtn" type="submit">FRAGEBOGEN EINREICHEN</button>
+        <div class="submit-note">Pflichtfelder werden pro Abschnitt geprüft. Ausgeblendete Fragen werden nicht übermittelt.</div>
+      </div>
+    </form>
+  </main>
+
+  <div class="success-screen" id="successScreen">
+    <div class="success-icon">✓</div>
+    <div class="success-title">Vielen Dank!</div>
+    <div class="success-text">Der Fragebogen wurde lokal verarbeitet. Unten sehen Sie die strukturierten Antwortdaten, die an ein Backend, eine Datenbank oder ein Auswertungsskript übergeben werden können.</div>
+    <div class="reference">Referenz: DEF-<span id="refNum"></span></div>
+    <div class="success-actions">
+      <button class="secondary-btn" id="copyJsonBtn" type="button">JSON kopieren</button>
+      <button class="secondary-btn" id="downloadJsonBtn" type="button">JSON herunterladen</button>
+      <button class="secondary-btn" id="restartBtn" type="button">Neu starten</button>
+    </div>
+    <pre class="data-preview" id="dataPreview"></pre>
+  </div>
+
+  <script src="assets/js/survey-config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2114 @@
+{
+  "meta": {
+    "id": "defence_survey_de_v4_3",
+    "version": "4.3",
+    "language": "de",
+    "routes": [
+      "J",
+      "P",
+      "N"
+    ]
+  },
+  "sections": [
+    {
+      "id": "general",
+      "number": "01",
+      "title": "Unternehmensprofil & Einteilung",
+      "icon": "🏢",
+      "visibleFor": [
+        "ALL"
+      ],
+      "questions": [
+        {
+          "id": "company_name",
+          "label": "Frage 1.1",
+          "text": "Name des Unternehmens",
+          "type": "text",
+          "required": true,
+          "visibleFor": [
+            "ALL"
+          ],
+          "placeholder": "Firmenname eingeben …"
+        },
+        {
+          "id": "legal_form",
+          "label": "Frage 1.2",
+          "text": "Rechtsform",
+          "type": "select",
+          "required": true,
+          "visibleFor": [
+            "ALL"
+          ],
+          "options": [
+            {
+              "value": "gmbh",
+              "label": "GmbH"
+            },
+            {
+              "value": "ag",
+              "label": "AG"
+            },
+            {
+              "value": "gmbh_co_kg",
+              "label": "GmbH & Co. KG"
+            },
+            {
+              "value": "kg",
+              "label": "KG"
+            },
+            {
+              "value": "ohg",
+              "label": "OHG"
+            },
+            {
+              "value": "sole_proprietor",
+              "label": "Einzelunternehmen"
+            },
+            {
+              "value": "other",
+              "label": "Sonstige"
+            }
+          ]
+        },
+        {
+          "id": "employee_count",
+          "label": "Frage 1.3",
+          "text": "Anzahl Mitarbeiter",
+          "type": "select",
+          "required": true,
+          "visibleFor": [
+            "ALL"
+          ],
+          "options": [
+            {
+              "value": "1_10",
+              "label": "1–10"
+            },
+            {
+              "value": "11_50",
+              "label": "11–50"
+            },
+            {
+              "value": "51_250",
+              "label": "51–250"
+            },
+            {
+              "value": "251_1000",
+              "label": "251–1.000"
+            },
+            {
+              "value": "1001_5000",
+              "label": "1.001–5.000"
+            },
+            {
+              "value": "over_5000",
+              "label": "Über 5.000"
+            }
+          ]
+        },
+        {
+          "id": "annual_revenue",
+          "label": "Frage 1.4",
+          "text": "Jahresumsatz des Unternehmens",
+          "type": "select",
+          "required": true,
+          "visibleFor": [
+            "ALL"
+          ],
+          "options": [
+            {
+              "value": "under_2m",
+              "label": "Unter 2 Mio. €"
+            },
+            {
+              "value": "2_10m",
+              "label": "2–10 Mio. €"
+            },
+            {
+              "value": "10_50m",
+              "label": "10–50 Mio. €"
+            },
+            {
+              "value": "50_250m",
+              "label": "50–250 Mio. €"
+            },
+            {
+              "value": "250m_1b",
+              "label": "250 Mio. – 1 Mrd. €"
+            },
+            {
+              "value": "over_1b",
+              "label": "Über 1 Mrd. €"
+            },
+            {
+              "value": "no_answer",
+              "label": "Keine Angabe"
+            }
+          ]
+        },
+        {
+          "id": "headquarters_state",
+          "label": "Frage 1.5",
+          "text": "Bundesland des Hauptsitzes",
+          "type": "select",
+          "visibleFor": [
+            "ALL"
+          ],
+          "options": [
+            {
+              "value": "BW",
+              "label": "Baden-Württemberg"
+            },
+            {
+              "value": "BY",
+              "label": "Bayern"
+            },
+            {
+              "value": "BE",
+              "label": "Berlin"
+            },
+            {
+              "value": "BB",
+              "label": "Brandenburg"
+            },
+            {
+              "value": "HB",
+              "label": "Bremen"
+            },
+            {
+              "value": "HH",
+              "label": "Hamburg"
+            },
+            {
+              "value": "HE",
+              "label": "Hessen"
+            },
+            {
+              "value": "MV",
+              "label": "Mecklenburg-Vorpommern"
+            },
+            {
+              "value": "NI",
+              "label": "Niedersachsen"
+            },
+            {
+              "value": "NW",
+              "label": "Nordrhein-Westfalen"
+            },
+            {
+              "value": "RP",
+              "label": "Rheinland-Pfalz"
+            },
+            {
+              "value": "SL",
+              "label": "Saarland"
+            },
+            {
+              "value": "SN",
+              "label": "Sachsen"
+            },
+            {
+              "value": "ST",
+              "label": "Sachsen-Anhalt"
+            },
+            {
+              "value": "SH",
+              "label": "Schleswig-Holstein"
+            },
+            {
+              "value": "TH",
+              "label": "Thüringen"
+            }
+          ]
+        },
+        {
+          "id": "is_active_in_sector",
+          "label": "Einteilung 1",
+          "text": "Ist Ihr Unternehmen bereits im Defence-, Sicherheits- oder Dual-Use-Bereich tätig?",
+          "type": "radio",
+          "required": true,
+          "routeQuestion": true,
+          "cardClass": "route-card",
+          "visibleFor": [
+            "ALL"
+          ],
+          "options": [
+            {
+              "value": "yes",
+              "label": "Ja, bereits tätig"
+            },
+            {
+              "value": "no",
+              "label": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "entry_planned",
+          "label": "Einteilung 2",
+          "text": "Plant Ihr Unternehmen einen Einstieg in den Defence-, Sicherheits- oder Dual-Use-Bereich?",
+          "type": "radio",
+          "required": true,
+          "routeQuestion": true,
+          "cardClass": "route-card",
+          "visibleFor": [
+            "ROUTE_NO_ACTIVE"
+          ],
+          "options": [
+            {
+              "value": "yes",
+              "label": "Ja, Einstieg geplant oder ernsthaft geprüft"
+            },
+            {
+              "value": "no",
+              "label": "Nein, aktuell nicht geplant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n_path",
+      "number": "02",
+      "title": "Kein Einstieg geplant",
+      "icon": "↪",
+      "visibleFor": [
+        "N"
+      ],
+      "questions": [
+        {
+          "id": "no_entry_reason",
+          "label": "Frage N.1",
+          "text": "Warum ist aktuell kein Einstieg in den Defence-, Sicherheits- oder Dual-Use-Bereich geplant?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "N"
+          ],
+          "options": [
+            {
+              "value": "no_strategic_fit",
+              "label": "Passt nicht zur Unternehmensstrategie"
+            },
+            {
+              "value": "regulatory_barriers",
+              "label": "Regulatorische oder rechtliche Hürden zu hoch"
+            },
+            {
+              "value": "ethical_reputation",
+              "label": "Ethische, ESG- oder Reputationsgründe"
+            },
+            {
+              "value": "no_market_access",
+              "label": "Kein Zugang zu Auftraggebern oder Netzwerken"
+            },
+            {
+              "value": "lack_capabilities",
+              "label": "Fehlende technische oder organisatorische Voraussetzungen"
+            },
+            {
+              "value": "no_information",
+              "label": "Zu wenig Informationen über Einstiegsmöglichkeiten"
+            },
+            {
+              "value": "other",
+              "label": "Sonstige Gründe"
+            }
+          ],
+          "labelByRoute": {
+            "N": "Frage N.1"
+          }
+        },
+        {
+          "id": "no_entry_notes",
+          "label": "Frage N.2",
+          "text": "Weitere Anmerkungen",
+          "type": "textarea",
+          "optional": true,
+          "visibleFor": [
+            "N"
+          ],
+          "placeholder": "Optional: kurze Erläuterung …",
+          "labelByRoute": {
+            "N": "Frage N.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "market_position",
+      "number": "02",
+      "title": "Marktpositionierung",
+      "icon": "🎯",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "position_current",
+          "label": "Frage J.1",
+          "text": "Welche Positionierung passt aktuell am besten auf Ihr Unternehmen?",
+          "type": "radio",
+          "required": true,
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "civil_with_dual_use",
+              "label": "Zivil tätig, mit einzelnen Dual-Use-Produkten oder -Technologien"
+            },
+            {
+              "value": "dual_use",
+              "label": "Dual-Use-Anbieter mit zivilen und sicherheitsbezogenen Anwendungen"
+            },
+            {
+              "value": "mostly_defence_security",
+              "label": "Überwiegend im Defence- oder Sicherheitsbereich tätig"
+            },
+            {
+              "value": "established_defence",
+              "label": "Etablierter Defence- oder Sicherheitsanbieter"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.1"
+          }
+        },
+        {
+          "id": "position_planned",
+          "label": "Frage P.1",
+          "text": "Wie plant Ihr Unternehmen, sich im Defence-/Verteidigungssektor zu positionieren?",
+          "type": "radio",
+          "required": true,
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "dual_use_entry",
+              "label": "Einstieg über Dual-Use-Produkte oder -Technologien"
+            },
+            {
+              "value": "supplier",
+              "label": "Zulieferer für Defence- oder Sicherheitsunternehmen"
+            },
+            {
+              "value": "direct_public",
+              "label": "Direkter Anbieter für öffentliche Auftraggeber"
+            },
+            {
+              "value": "undecided",
+              "label": "Noch offen / in Prüfung"
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.1"
+          }
+        },
+        {
+          "id": "fields_current",
+          "label": "Frage J.2",
+          "text": "In welchen Defence-, Sicherheits- oder Dual-Use-Feldern ist Ihr Unternehmen aktuell tätig?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "land",
+              "label": "Landstreitkräfte"
+            },
+            {
+              "value": "naval",
+              "label": "Marine"
+            },
+            {
+              "value": "air_radar_drones",
+              "label": "Luftfahrt, Drohnen oder Radar"
+            },
+            {
+              "value": "cyber_it",
+              "label": "Cyber- und IT-Sicherheit"
+            },
+            {
+              "value": "isr_sensors",
+              "label": "Aufklärung, Sensorik oder ISR"
+            },
+            {
+              "value": "logistics_mro",
+              "label": "Logistik, Wartung und Instandhaltung"
+            },
+            {
+              "value": "training_simulation",
+              "label": "Simulation, Training und Ausbildung"
+            },
+            {
+              "value": "civil_security",
+              "label": "Zivile Sicherheit, Polizei, Katastrophenschutz oder kritische Infrastruktur"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.2"
+          }
+        },
+        {
+          "id": "fields_future_j",
+          "label": "Frage J.3",
+          "text": "In welchen Feldern möchte Ihr Unternehmen zukünftig ausbauen?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "land",
+              "label": "Landstreitkräfte"
+            },
+            {
+              "value": "naval",
+              "label": "Marine"
+            },
+            {
+              "value": "air_radar_drones",
+              "label": "Luftfahrt, Drohnen oder Radar"
+            },
+            {
+              "value": "cyber_it",
+              "label": "Cyber- und IT-Sicherheit"
+            },
+            {
+              "value": "isr_sensors",
+              "label": "Aufklärung, Sensorik oder ISR"
+            },
+            {
+              "value": "logistics_mro",
+              "label": "Logistik, Wartung und Instandhaltung"
+            },
+            {
+              "value": "training_simulation",
+              "label": "Simulation, Training und Ausbildung"
+            },
+            {
+              "value": "civil_security",
+              "label": "Zivile Sicherheit, Polizei, Katastrophenschutz oder kritische Infrastruktur"
+            },
+            {
+              "value": "no_expansion",
+              "label": "Kein Ausbau geplant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.3"
+          }
+        },
+        {
+          "id": "fields_future_p",
+          "label": "Frage P.2",
+          "text": "In welchen Defence-, Sicherheits- oder Dual-Use-Feldern möchte Ihr Unternehmen tätig werden?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "land",
+              "label": "Landstreitkräfte"
+            },
+            {
+              "value": "naval",
+              "label": "Marine"
+            },
+            {
+              "value": "air_radar_drones",
+              "label": "Luftfahrt, Drohnen oder Radar"
+            },
+            {
+              "value": "cyber_it",
+              "label": "Cyber- und IT-Sicherheit"
+            },
+            {
+              "value": "isr_sensors",
+              "label": "Aufklärung, Sensorik oder ISR"
+            },
+            {
+              "value": "logistics_mro",
+              "label": "Logistik, Wartung und Instandhaltung"
+            },
+            {
+              "value": "training_simulation",
+              "label": "Simulation, Training und Ausbildung"
+            },
+            {
+              "value": "civil_security",
+              "label": "Zivile Sicherheit, Polizei, Katastrophenschutz oder kritische Infrastruktur"
+            },
+            {
+              "value": "undecided",
+              "label": "Noch offen",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.2"
+          }
+        },
+        {
+          "id": "clients_current",
+          "label": "Frage J.4",
+          "text": "Wer sind Ihre primären Auftraggeber aktuell?",
+          "type": "radio",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "civil",
+              "label": "Ausschließlich zivile Kunden"
+            },
+            {
+              "value": "bundeswehr_bmvg_baainbw",
+              "label": "Bundeswehr / BMVg / BAAINBw"
+            },
+            {
+              "value": "nato_allies",
+              "label": "Keine AngabeTO oder alliierte Streitkräfte"
+            },
+            {
+              "value": "eu_institutions",
+              "label": "Europäische Defence-Institutionen"
+            },
+            {
+              "value": "prime_oem_tier1",
+              "label": "Hauptauftragnehmer / OEM / Tier-1-Lieferanten"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.4"
+          }
+        },
+        {
+          "id": "clients_planned",
+          "label": "Frage P.3",
+          "text": "Welche primären Auftraggeber strebt Ihr Unternehmen an?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "bundeswehr_bmvg_baainbw",
+              "label": "Bundeswehr / BMVg / BAAINBw"
+            },
+            {
+              "value": "nato_allies",
+              "label": "Keine AngabeTO oder alliierte Streitkräfte",
+              "exclusive": true
+            },
+            {
+              "value": "eu_institutions",
+              "label": "Europäische Defence-Institutionen"
+            },
+            {
+              "value": "prime_oem_tier1",
+              "label": "Hauptauftragnehmer / OEM / Tier-1-Lieferanten"
+            },
+            {
+              "value": "undecided",
+              "label": "Noch offen",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.3"
+          }
+        },
+        {
+          "id": "defence_revenue_share",
+          "label": "Frage J.5",
+          "text": "Wie hoch ist ungefähr der aktuelle Defence-, Sicherheits- oder Dual-Use-Anteil am Gesamtumsatz?",
+          "type": "radio",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "under_10",
+              "label": "Unter 10 %"
+            },
+            {
+              "value": "10_30",
+              "label": "10–30 %"
+            },
+            {
+              "value": "31_60",
+              "label": "31–60 %"
+            },
+            {
+              "value": "61_90",
+              "label": "61–90 %"
+            },
+            {
+              "value": "over_90",
+              "label": "Über 90 %"
+            },
+            {
+              "value": "no_answer",
+              "label": "Keine Angabe"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.5"
+          }
+        },
+        {
+          "id": "development_current",
+          "label": "Frage J.6",
+          "text": "Wie ist der Entwicklungsstand Ihres Unternehmens im Defence-, Sicherheits- oder Dual-Use-Bereich?",
+          "type": "radio",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "first_orders",
+              "label": "Erste Aufträge vorhanden"
+            },
+            {
+              "value": "growing",
+              "label": "Geschäftsfeld im Ausbau"
+            },
+            {
+              "value": "established",
+              "label": "Etablierter Anbieter"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.6"
+          }
+        },
+        {
+          "id": "development_planned",
+          "label": "Frage P.4",
+          "text": "Wie weit ist Ihr Unternehmen auf dem Weg zum Einstieg?",
+          "type": "radio",
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "early_interest",
+              "label": "Frühe Orientierung"
+            },
+            {
+              "value": "strategic_evaluation",
+              "label": "Strategische Prüfung läuft"
+            },
+            {
+              "value": "first_contacts",
+              "label": "Erste Gespräche oder Kontakte"
+            },
+            {
+              "value": "preparations",
+              "label": "Konkrete Vorbereitungen, Zertifizierungen oder Prozesse"
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "barriers",
+      "number": "03",
+      "title": "Einstieg & Hürden",
+      "icon": "🔄",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "info": "Die Hürdenfragen sind je nach Pfad unterschiedlich formuliert: J-Unternehmen bewerten Erfahrungen rückblickend, P-Unternehmen bewerten erwartete oder aktuell wahrgenommene Einstiegshürden.",
+      "questions": [
+        {
+          "id": "reg_barriers_j",
+          "label": "Frage J.7",
+          "text": "Wie schwer waren/sind regulatorische und rechtliche Hürden beim Einstieg?",
+          "type": "scale",
+          "visibleFor": [
+            "J"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / kein Problem",
+            "na": "Keine Angabe / nicht relevant",
+            "high": "5 = sehr stark / extrem schwer"
+          },
+          "labelByRoute": {
+            "J": "Frage J.7"
+          }
+        },
+        {
+          "id": "reg_barriers_p",
+          "label": "Frage P.5",
+          "text": "Wie schwer erscheinen regulatorische und rechtliche Hürden für den geplanten Einstieg?",
+          "type": "scale",
+          "visibleFor": [
+            "P"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / kein Problem",
+            "na": "Keine Angabe / nicht relevant",
+            "high": "5 = sehr stark / extrem schwer"
+          },
+          "labelByRoute": {
+            "P": "Frage P.5"
+          }
+        },
+        {
+          "id": "reg_barrier_details",
+          "label": "Frage J.8 / Frage P.6",
+          "text": "Welche regulatorischen oder rechtlichen Punkte waren/sind konkret schwierig?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "export_control",
+              "label": "Exportkontrolle (AWG/AWV)"
+            },
+            {
+              "value": "security_clearance",
+              "label": "Geheimschutz / Sicherheitsüberprüfungen"
+            },
+            {
+              "value": "export_licenses",
+              "label": "Rüstungsexportgenehmigungen (BAFA)"
+            },
+            {
+              "value": "kwkg",
+              "label": "Kriegswaffenkontrollgesetz"
+            },
+            {
+              "value": "nato_eu_requirements",
+              "label": "Keine AngabeTO- oder EU-Sicherheitsanforderungen",
+              "exclusive": true
+            },
+            {
+              "value": "not_relevant",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.8",
+            "P": "Frage P.6"
+          }
+        },
+        {
+          "id": "org_barriers",
+          "label": "Frage J.9 / Frage P.7",
+          "textByRoute": {
+            "J": "Wie schwer waren/sind organisatorische und strukturelle Hürden?",
+            "P": "Wie schwer erscheinen organisatorische und strukturelle Hürden für den geplanten Einstieg?"
+          },
+          "type": "scale",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / kein Problem",
+            "na": "Keine Angabe / nicht relevant",
+            "high": "5 = sehr stark / extrem schwer"
+          },
+          "labelByRoute": {
+            "J": "Frage J.9",
+            "P": "Frage P.7"
+          }
+        },
+        {
+          "id": "org_barrier_details",
+          "label": "Frage J.10 / Frage P.8",
+          "text": "Welche organisatorischen oder strukturellen Punkte waren/sind konkret schwierig?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "compliance_structures",
+              "label": "Aufbau interner Compliance-Strukturen"
+            },
+            {
+              "value": "classified_it",
+              "label": "Anpassung von IT-Systemen an Geheimschutzanforderungen"
+            },
+            {
+              "value": "staff_training",
+              "label": "Schulung und Sensibilisierung der Belegschaft"
+            },
+            {
+              "value": "process_separation",
+              "label": "Trennung ziviler und militärischer Prozesse oder Produkte"
+            },
+            {
+              "value": "quality_management",
+              "label": "Aufbau oder Anpassung eines Qualitätsmanagementsystems (z. B. AQAP, AS9100)"
+            },
+            {
+              "value": "no_answer",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.10",
+            "P": "Frage P.8"
+          }
+        },
+        {
+          "id": "financial_barriers",
+          "label": "Frage J.11 / Frage P.9",
+          "textByRoute": {
+            "J": "Wie schwer waren/sind finanzielle und investive Hürden?",
+            "P": "Wie schwer erscheinen finanzielle und investive Hürden für den geplanten Einstieg?"
+          },
+          "type": "scale",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / kein Problem",
+            "na": "Keine Angabe / nicht relevant",
+            "high": "5 = sehr stark / extrem schwer"
+          },
+          "labelByRoute": {
+            "J": "Frage J.11",
+            "P": "Frage P.9"
+          }
+        },
+        {
+          "id": "financial_barrier_details",
+          "label": "Frage J.12 / Frage P.10",
+          "text": "Welche finanziellen oder investiven Punkte waren/sind konkret schwierig?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "esg_financing",
+              "label": "ESG-bedingte Finanzierungsschwierigkeiten bei Banken oder Investoren"
+            },
+            {
+              "value": "upfront_investment",
+              "label": "Hohe Vorabinvestitionen ohne Auftragssicherheit"
+            },
+            {
+              "value": "payment_cycles",
+              "label": "Lange Zahlungszyklen im Defence-/Verteidigungssektor"
+            },
+            {
+              "value": "certification_costs",
+              "label": "Zertifizierungs- und Akkreditierungskosten"
+            },
+            {
+              "value": "no_answer",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.12",
+            "P": "Frage P.10"
+          }
+        },
+        {
+          "id": "cultural_barriers",
+          "label": "Frage J.13 / Frage P.11",
+          "textByRoute": {
+            "J": "Wie schwer waren/sind kulturelle und gesellschaftliche Hürden?",
+            "P": "Wie schwer erscheinen kulturelle und gesellschaftliche Hürden für den geplanten Einstieg?"
+          },
+          "type": "scale",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / kein Problem",
+            "na": "Keine Angabe / nicht relevant",
+            "high": "5 = sehr stark / extrem schwer"
+          },
+          "labelByRoute": {
+            "J": "Frage J.13",
+            "P": "Frage P.11"
+          }
+        },
+        {
+          "id": "cultural_barrier_details",
+          "label": "Frage J.14 / Frage P.12",
+          "text": "Welche kulturellen oder gesellschaftlichen Punkte waren/sind konkret schwierig?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "workforce_resistance",
+              "label": "Vorbehalte in Belegschaft oder Betriebsrat"
+            },
+            {
+              "value": "reputation_risk",
+              "label": "Negative öffentliche Wahrnehmung oder Reputationsrisiko"
+            },
+            {
+              "value": "civil_customer_reactions",
+              "label": "Reaktionen von Kunden aus dem Zivilbereich"
+            },
+            {
+              "value": "ethics_compliance_discussions",
+              "label": "Interne Ethik- oder Compliance-Diskussionen"
+            },
+            {
+              "value": "no_answer",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.14",
+            "P": "Frage P.12"
+          }
+        },
+        {
+          "id": "entry_missing_j",
+          "label": "Frage J.15",
+          "text": "Was hat Ihrem Unternehmen beim Einstieg am meisten gefehlt?",
+          "type": "textarea",
+          "visibleFor": [
+            "J"
+          ],
+          "placeholder": "z.B. fehlendes technisches Know-how, komplexe Vorschriften, mangelnde Vernetzung …",
+          "labelByRoute": {
+            "J": "Frage J.15"
+          }
+        },
+        {
+          "id": "entry_blocker_p",
+          "label": "Frage P.13",
+          "text": "Was hält Ihr Unternehmen aktuell noch vom Einstieg ab?",
+          "type": "textarea",
+          "visibleFor": [
+            "P"
+          ],
+          "placeholder": "z.B. fehlendes technisches Know-how, komplexe Vorschriften, mangelnde Vernetzung …",
+          "labelByRoute": {
+            "P": "Frage P.13"
+          }
+        }
+      ]
+    },
+    {
+      "id": "procurement",
+      "number": "04",
+      "title": "Beschaffung & Regulierungserfahrung",
+      "icon": "⚖️",
+      "visibleFor": [
+        "J"
+      ],
+      "questions": [
+        {
+          "id": "baainbw_collaboration",
+          "label": "Frage J.16",
+          "text": "Wie bewerten Sie die Zusammenarbeit mit dem BAAINBw oder öffentlichen Auftraggebern?",
+          "type": "scale",
+          "visibleFor": [
+            "J"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / niedrig",
+            "na": "Keine Angabe",
+            "high": "5 = sehr stark / hoch"
+          },
+          "labelByRoute": {
+            "J": "Frage J.16"
+          }
+        },
+        {
+          "id": "procurement_challenges",
+          "label": "Frage J.17",
+          "text": "Welche Herausforderungen erleben Sie in Vergabeverfahren?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "long_duration",
+              "label": "Lange Verfahrensdauer"
+            },
+            {
+              "value": "bureaucracy",
+              "label": "Hohe bürokratische Anforderungen"
+            },
+            {
+              "value": "low_transparency",
+              "label": "Mangelnde Transparenz"
+            },
+            {
+              "value": "established_advantage",
+              "label": "Vorteile etablierter Anbieter"
+            },
+            {
+              "value": "none",
+              "label": "Keine nennenswerten Herausforderungen",
+              "exclusive": true
+            },
+            {
+              "value": "no_experience",
+              "label": "Keine Angabe / keine Erfahrung",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.17"
+          }
+        },
+        {
+          "id": "export_control_effort",
+          "label": "Frage J.18",
+          "text": "Wie hoch ist der Aufwand der deutschen Exportkontrolle für Ihr Unternehmen?",
+          "type": "scale",
+          "visibleFor": [
+            "J"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = sehr gering",
+            "na": "Keine Angabe / kein Exportgeschäft",
+            "high": "5 = sehr hoch"
+          },
+          "labelByRoute": {
+            "J": "Frage J.18"
+          }
+        },
+        {
+          "id": "security_accreditations",
+          "label": "Frage J.19",
+          "text": "Über welche Sicherheitsakkreditierungen oder Geheimschutzfreigaben verfügt Ihr Unternehmen?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "vs_nfd",
+              "label": "VS-NfD"
+            },
+            {
+              "value": "vs_vertraulich",
+              "label": "VS-Vertraulich"
+            },
+            {
+              "value": "nato_secret_eu_confidential",
+              "label": "Keine AngabeTO SECRET / EU CONFIDENTIAL",
+              "exclusive": true
+            },
+            {
+              "value": "in_application",
+              "label": "In Beantragung"
+            },
+            {
+              "value": "none_planned",
+              "label": "Keine, aber angestrebt"
+            },
+            {
+              "value": "none_not_needed",
+              "label": "Keine und aktuell nicht benötigt",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "investment",
+      "number": "05",
+      "title": "Entwicklungen seit 2022, Investitionen & Förderung",
+      "icon": "📈",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "zeitenwende_effect_j",
+          "label": "Frage J.20",
+          "text": "Wie stark haben die Entwicklungen seit 2022 Ihr laufendes Defence- oder Sicherheitsgeschäft beeinflusst?",
+          "type": "radio",
+          "required": true,
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "strong_positive",
+              "label": "Deutlich positiv"
+            },
+            {
+              "value": "moderate_positive",
+              "label": "Moderat positiv"
+            },
+            {
+              "value": "little_effect",
+              "label": "Kaum Auswirkungen"
+            },
+            {
+              "value": "negative",
+              "label": "Eher negativ"
+            },
+            {
+              "value": "not_relevant",
+              "label": "Nicht relevant"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.20"
+          }
+        },
+        {
+          "id": "zeitenwende_effect_p",
+          "label": "Frage P.14",
+          "text": "Wie stark haben die Entwicklungen seit 2022 Ihre Einstiegsentscheidung beeinflusst?",
+          "type": "radio",
+          "required": true,
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "strong_positive",
+              "label": "Stark in Richtung Einstieg beeinflusst"
+            },
+            {
+              "value": "moderate_positive",
+              "label": "Moderat beeinflusst"
+            },
+            {
+              "value": "little_effect",
+              "label": "Kaum Einfluss"
+            },
+            {
+              "value": "unclear",
+              "label": "Noch unklar"
+            },
+            {
+              "value": "not_relevant",
+              "label": "Nicht relevant"
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.14"
+          }
+        },
+        {
+          "id": "investment_increase",
+          "label": "Frage J.21 / Frage P.15",
+          "text": "Plant Ihr Unternehmen in den nächsten drei Jahren, Investitionen im Defence-/Verteidigungssektor zu erhöhen?",
+          "type": "radio",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "strong_increase",
+              "label": "Ja, deutlich"
+            },
+            {
+              "value": "moderate_increase",
+              "label": "Ja, moderat"
+            },
+            {
+              "value": "stable",
+              "label": "Etwa gleichbleibend"
+            },
+            {
+              "value": "decrease",
+              "label": "Eher weniger"
+            },
+            {
+              "value": "not_applicable",
+              "label": "Nicht zutreffend"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.21",
+            "P": "Frage P.15"
+          }
+        },
+        {
+          "id": "investment_fields",
+          "label": "Frage J.22 / Frage P.16",
+          "text": "In welche Investitionsfelder plant Ihr Unternehmen primär zu investieren?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "rd",
+              "label": "Forschung und Entwicklung"
+            },
+            {
+              "value": "production",
+              "label": "Produktionskapazitäten"
+            },
+            {
+              "value": "it_digital",
+              "label": "IT-Infrastruktur und Digitalisierung"
+            },
+            {
+              "value": "skills_training",
+              "label": "Fachkräfte und Qualifizierung"
+            },
+            {
+              "value": "certifications",
+              "label": "Zertifizierungen und Zulassungen"
+            },
+            {
+              "value": "cooperation",
+              "label": "Internationale Kooperationen"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.22",
+            "P": "Frage P.16"
+          }
+        },
+        {
+          "id": "funding_instruments",
+          "label": "Frage J.23 / Frage P.17",
+          "text": "Nutzt Ihr Unternehmen öffentliche oder private Förderinstrumente?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "national",
+              "label": "Nationale Förderprogramme"
+            },
+            {
+              "value": "edf",
+              "label": "Europäischer Verteidigungsfonds"
+            },
+            {
+              "value": "nato",
+              "label": "Keine AngabeTO-Programme",
+              "exclusive": true
+            },
+            {
+              "value": "private_vc",
+              "label": "Venture Capital / Private Defence-Fonds"
+            },
+            {
+              "value": "none",
+              "label": "Keine Förderung",
+              "exclusive": true
+            },
+            {
+              "value": "interested_no_access",
+              "label": "Interesse vorhanden, aber kein Zugang bisher"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.23",
+            "P": "Frage P.17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "number": "06",
+      "title": "Technologie & Innovation",
+      "icon": "🔬",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "technology_fields_j",
+          "label": "Frage J.24",
+          "text": "Welche Technologiefelder sind für Ihr aktuelles Defence-, Sicherheits- oder Dual-Use-Geschäft zentral?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "ai",
+              "label": "Künstliche Intelligenz"
+            },
+            {
+              "value": "autonomous_robotics",
+              "label": "Autonome Systeme und Robotik"
+            },
+            {
+              "value": "quantum",
+              "label": "Quantentechnologie"
+            },
+            {
+              "value": "hypersonic",
+              "label": "Hyperschall-Technologien"
+            },
+            {
+              "value": "cyber",
+              "label": "Cybersicherheit"
+            },
+            {
+              "value": "space_satellite",
+              "label": "Weltraum- und Satellitensysteme"
+            },
+            {
+              "value": "advanced_materials",
+              "label": "Advanced Materials und Schutztechnologien"
+            },
+            {
+              "value": "additive_manufacturing",
+              "label": "Additive Fertigung"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.24"
+          }
+        },
+        {
+          "id": "technology_fields_p",
+          "label": "Frage P.18",
+          "text": "Welche Technologiefelder werden für Ihr geplantes Defence-, Sicherheits- oder Dual-Use-Geschäft zentral sein?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "ai",
+              "label": "Künstliche Intelligenz"
+            },
+            {
+              "value": "autonomous_robotics",
+              "label": "Autonome Systeme und Robotik"
+            },
+            {
+              "value": "quantum",
+              "label": "Quantentechnologie"
+            },
+            {
+              "value": "hypersonic",
+              "label": "Hyperschall-Technologien"
+            },
+            {
+              "value": "cyber",
+              "label": "Cybersicherheit"
+            },
+            {
+              "value": "space_satellite",
+              "label": "Weltraum- und Satellitensysteme"
+            },
+            {
+              "value": "advanced_materials",
+              "label": "Advanced Materials und Schutztechnologien"
+            },
+            {
+              "value": "additive_manufacturing",
+              "label": "Additive Fertigung"
+            },
+            {
+              "value": "undecided",
+              "label": "Noch offen",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.18"
+          }
+        },
+        {
+          "id": "innovation_support_j",
+          "label": "Frage J.25",
+          "text": "Wie gut unterstützt das deutsche Innovationsökosystem Ihr Unternehmen?",
+          "type": "scale",
+          "visibleFor": [
+            "J"
+          ],
+          "na": true,
+          "scaleLabels": {
+            "low": "1 = gar nicht / niedrig",
+            "na": "Keine Angabe",
+            "high": "5 = sehr stark / hoch"
+          },
+          "labelByRoute": {
+            "J": "Frage J.25"
+          }
+        },
+        {
+          "id": "innovation_support_p",
+          "label": "Frage P.19",
+          "text": "Welche Unterstützung durch das deutsche Innovationsökosystem wäre für den Einstieg wichtig?",
+          "type": "textarea",
+          "visibleFor": [
+            "P"
+          ],
+          "placeholder": "z.B. Förderprogramme, Pilotprojekte, Kontakte, Beratung …",
+          "labelByRoute": {
+            "P": "Frage P.19"
+          }
+        },
+        {
+          "id": "supply_chain_resilience_j",
+          "label": "Frage J.26",
+          "text": "Wie resilient sind Ihre Lieferketten für Defence- oder Dual-Use-Produkte?",
+          "type": "radio",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "very_resilient",
+              "label": "Sehr resilient"
+            },
+            {
+              "value": "mostly_resilient",
+              "label": "Weitgehend resilient"
+            },
+            {
+              "value": "vulnerable",
+              "label": "Anfällig"
+            },
+            {
+              "value": "high_risk",
+              "label": "Stark gefährdet"
+            },
+            {
+              "value": "not_analyzed",
+              "label": "Noch nicht analysiert"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.26"
+          }
+        },
+        {
+          "id": "supply_chain_expectations_p",
+          "label": "Frage P.20",
+          "text": "Welche Anforderungen an Lieferketten erwarten Sie beim Einstieg?",
+          "type": "textarea",
+          "visibleFor": [
+            "P"
+          ],
+          "placeholder": "z.B. Nachweise, Resilienz, Sicherheitsanforderungen, Lieferantenwechsel …",
+          "labelByRoute": {
+            "P": "Frage P.20"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eu",
+      "number": "07",
+      "title": "Europa, Regionen & Kooperationen",
+      "icon": "🌍",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "eu_programs",
+          "label": "Frage J.27 / Frage P.21",
+          "text": "An welchen europäischen Defence-Programmen ist Ihr Unternehmen beteiligt oder plant eine Beteiligung?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "pesco",
+              "label": "PESCO"
+            },
+            {
+              "value": "edf",
+              "label": "EDF"
+            },
+            {
+              "value": "occar",
+              "label": "OCCAR"
+            },
+            {
+              "value": "none",
+              "label": "Keine Beteiligung / keine geplante Beteiligung",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.27",
+            "P": "Frage P.21"
+          }
+        },
+        {
+          "id": "growth_regions",
+          "label": "Frage J.28 / Frage P.22",
+          "text": "In welchen Regionen sehen Sie Wachstumspotenzial für den Defence-/Verteidigungssektor?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "germany",
+              "label": "Deutschland"
+            },
+            {
+              "value": "western_europe",
+              "label": "Westeuropa"
+            },
+            {
+              "value": "eastern_europe",
+              "label": "Osteuropa"
+            },
+            {
+              "value": "north_america",
+              "label": "Nordamerika"
+            },
+            {
+              "value": "middle_east",
+              "label": "Naher Osten"
+            },
+            {
+              "value": "africa",
+              "label": "Afrika"
+            },
+            {
+              "value": "asia_pacific",
+              "label": "Asien / Pazifik"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.28",
+            "P": "Frage P.22"
+          }
+        },
+        {
+          "id": "partners_j",
+          "label": "Frage J.29",
+          "text": "Welche Partnertypen sind für Ihre Marktpositionierung im Defence-/Verteidigungssektor relevant?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "state_public",
+              "label": "Staat / öffentliche Auftraggeber"
+            },
+            {
+              "value": "national_defence",
+              "label": "Nationale Rüstungsunternehmen"
+            },
+            {
+              "value": "international_defence",
+              "label": "Internationale Rüstungsunternehmen"
+            },
+            {
+              "value": "research",
+              "label": "Forschungseinrichtungen"
+            },
+            {
+              "value": "universities",
+              "label": "Universitäten und Hochschulen"
+            },
+            {
+              "value": "startups",
+              "label": "Start-ups / Defence-Tech-Ökosystem"
+            },
+            {
+              "value": "none",
+              "label": "Keine Kooperationen",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.29"
+          }
+        },
+        {
+          "id": "partners_p",
+          "label": "Frage P.23",
+          "text": "Welche Partnertypen sind für Ihre Marktpositionierung im Defence-/Verteidigungssektor relevant?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "state_public",
+              "label": "Staat / öffentliche Auftraggeber"
+            },
+            {
+              "value": "national_defence",
+              "label": "Nationale Rüstungsunternehmen"
+            },
+            {
+              "value": "international_defence",
+              "label": "Internationale Rüstungsunternehmen"
+            },
+            {
+              "value": "research",
+              "label": "Forschungseinrichtungen"
+            },
+            {
+              "value": "universities",
+              "label": "Universitäten und Hochschulen"
+            },
+            {
+              "value": "startups",
+              "label": "Start-ups / Defence-Tech-Ökosystem"
+            },
+            {
+              "value": "none",
+              "label": "Keine Kooperationen geplant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.23"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outlook",
+      "number": "08",
+      "title": "Herausforderungen & Ausblick",
+      "icon": "🔭",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "obstacles_j",
+          "label": "Frage J.30",
+          "text": "Was waren/sind die größten Hürden für Ihr Unternehmen im Defence-/Verteidigungssektor?",
+          "type": "checkbox",
+          "hint": "Bitte maximal 3 auswählen",
+          "max": 3,
+          "visibleFor": [
+            "J"
+          ],
+          "options": [
+            {
+              "value": "skills",
+              "label": "Fachkräftemangel"
+            },
+            {
+              "value": "financing",
+              "label": "Finanzierung"
+            },
+            {
+              "value": "bureaucracy",
+              "label": "Bürokratie und Genehmigungsverfahren"
+            },
+            {
+              "value": "public_decision_cycles",
+              "label": "Lange Entscheidungszyklen der öffentlichen Hand"
+            },
+            {
+              "value": "esg",
+              "label": "Environmental, Social and Governance (ESG)- oder Nachhaltigkeitsanforderungen"
+            },
+            {
+              "value": "security_clearance",
+              "label": "Sicherheitsfreigaben und Geheimschutz"
+            },
+            {
+              "value": "supply_chain",
+              "label": "Lieferkettenstabilität"
+            },
+            {
+              "value": "international_competition",
+              "label": "Internationale Konkurrenz"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.30"
+          }
+        },
+        {
+          "id": "obstacles_p",
+          "label": "Frage P.24",
+          "text": "Was sind aus Ihrer Sicht die größten erwarteten Hürden beim Einstieg in den Defence-/Verteidigungssektor?",
+          "type": "checkbox",
+          "hint": "Bitte maximal 3 auswählen",
+          "max": 3,
+          "visibleFor": [
+            "P"
+          ],
+          "options": [
+            {
+              "value": "skills",
+              "label": "Fachkräftemangel"
+            },
+            {
+              "value": "financing",
+              "label": "Finanzierung"
+            },
+            {
+              "value": "bureaucracy",
+              "label": "Bürokratie und Genehmigungsverfahren"
+            },
+            {
+              "value": "public_decision_cycles",
+              "label": "Lange Entscheidungszyklen der öffentlichen Hand"
+            },
+            {
+              "value": "esg",
+              "label": "Environmental, Social and Governance (ESG)- oder Nachhaltigkeitsanforderungen"
+            },
+            {
+              "value": "security_clearance",
+              "label": "Sicherheitsfreigaben und Geheimschutz"
+            },
+            {
+              "value": "supply_chain",
+              "label": "Lieferkettenstabilität"
+            },
+            {
+              "value": "international_competition",
+              "label": "Internationale Konkurrenz"
+            }
+          ],
+          "labelByRoute": {
+            "P": "Frage P.24"
+          }
+        },
+        {
+          "id": "market_outlook",
+          "label": "Frage J.31 / Frage P.25",
+          "text": "Wie beurteilen Sie die Entwicklung des deutschen Defence-Marktes in den nächsten fünf Jahren?",
+          "type": "scale",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "scaleLabels": {
+            "low": "1 = gar nicht / niedrig",
+            "na": "Keine Angabe",
+            "high": "5 = sehr stark / hoch"
+          },
+          "labelByRoute": {
+            "J": "Frage J.31",
+            "P": "Frage P.25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "final_jp",
+      "number": "09",
+      "title": "ESG, Personal, Standort & Abschluss",
+      "icon": "🏁",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "esg_defence",
+          "label": "Frage J.32 / Frage P.26",
+          "text": "Wie geht Ihr Unternehmen mit dem Spannungsfeld Environmental, Social and Governance (ESG) und Defence um?",
+          "type": "checkbox",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "no_conflict",
+              "label": "Kein wesentlicher Konflikt"
+            },
+            {
+              "value": "differentiated",
+              "label": "Differenzierter Ansatz nach Produktkategorien"
+            },
+            {
+              "value": "investor_bank_pressure",
+              "label": "Druck von Investoren oder Banken spürbar"
+            },
+            {
+              "value": "significant_barrier",
+              "label": "Environmental, Social and Governance (ESG)-Anforderungen behindern Defence-Engagement deutlich"
+            },
+            {
+              "value": "not_relevant",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "hint": "Mehrfachauswahl möglich",
+          "labelByRoute": {
+            "J": "Frage J.32",
+            "P": "Frage P.26"
+          }
+        },
+        {
+          "id": "hr_recruiting",
+          "label": "Frage J.33 / Frage P.27",
+          "text": "Wie rekrutiert oder plant Ihr Unternehmen, Fachkräfte für diesen Bereich zu rekrutieren?",
+          "type": "checkbox",
+          "hint": "Mehrfachauswahl möglich",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "universities",
+              "label": "Universitäten und technische Hochschulen"
+            },
+            {
+              "value": "former_military",
+              "label": "Ehemalige Bundeswehr-Angehörige"
+            },
+            {
+              "value": "international",
+              "label": "Internationale Fachkräfte"
+            },
+            {
+              "value": "internal_training",
+              "label": "Interne Qualifizierung oder Umschulung"
+            },
+            {
+              "value": "headhunting",
+              "label": "Headhunting / Direktansprache"
+            },
+            {
+              "value": "not_relevant",
+              "label": "Keine Angabe / nicht relevant",
+              "exclusive": true
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.33",
+            "P": "Frage P.27"
+          }
+        },
+        {
+          "id": "site_attractiveness",
+          "label": "Frage J.34 / Frage P.28",
+          "text": "Wie attraktiv ist Deutschland als Standort für Defence- oder Sicherheitsgeschäft?",
+          "type": "scale",
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "scaleLabels": {
+            "low": "1 = gar nicht / niedrig",
+            "na": "Keine Angabe",
+            "high": "5 = sehr stark / hoch"
+          },
+          "labelByRoute": {
+            "J": "Frage J.34",
+            "P": "Frage P.28"
+          }
+        },
+        {
+          "id": "policy_priorities",
+          "label": "Frage J.35 / Frage P.29",
+          "text": "Welche Maßnahmen hätten den größten positiven Effekt auf Ihr aktuelles oder geplantes Defence-Geschäft?",
+          "type": "checkbox",
+          "hint": "Bitte maximal 3 auswählen",
+          "max": 3,
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "faster_procurement",
+              "label": "Schnellere Beschaffungsverfahren"
+            },
+            {
+              "value": "sme_startup_support",
+              "label": "Mehr Einstiegsunterstützung für KMU und Start-ups"
+            },
+            {
+              "value": "predictable_export",
+              "label": "Planbarere Exportgenehmigungen"
+            },
+            {
+              "value": "eu_harmonization",
+              "label": "Stärkere europäische Harmonisierung"
+            },
+            {
+              "value": "skills",
+              "label": "Bessere Fachkräfteverfügbarkeit"
+            },
+            {
+              "value": "simpler_security_accreditation",
+              "label": "Einfachere Sicherheitsakkreditierung"
+            },
+            {
+              "value": "tax_incentives",
+              "label": "Investitions- oder Steueranreize"
+            },
+            {
+              "value": "other",
+              "label": "Sonstige Maßnahme"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.35",
+            "P": "Frage P.29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "number": "10",
+      "title": "Anmerkungen & Kontakt",
+      "icon": "✉️",
+      "visibleFor": [
+        "J",
+        "P"
+      ],
+      "questions": [
+        {
+          "id": "general_notes",
+          "label": "Frage J.36 / Frage P.30",
+          "text": "Weitere Anmerkungen, Ergänzungen oder Verbesserungsvorschläge",
+          "type": "textarea",
+          "optional": true,
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "placeholder": "Ihre Anmerkungen hier eingeben …",
+          "labelByRoute": {
+            "J": "Frage J.36",
+            "P": "Frage P.30"
+          }
+        },
+        {
+          "type": "info",
+          "text": "Alle vorherigen Angaben können auch ohne Kontaktdaten ausgewertet werden. Wenn Sie Studienergebnisse erhalten oder für Rückfragen erreichbar sein möchten, können Sie freiwillig Kontaktdaten hinterlassen.",
+          "visibleFor": [
+            "J",
+            "P"
+          ]
+        },
+        {
+          "id": "contact_name",
+          "label": "Frage J.37 / Frage P.31",
+          "text": "Ansprechpartner",
+          "type": "text",
+          "optional": true,
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "placeholder": "Vor- und Nachname …",
+          "labelByRoute": {
+            "J": "Frage J.37",
+            "P": "Frage P.31"
+          }
+        },
+        {
+          "id": "contact_email",
+          "label": "Frage J.38 / Frage P.32",
+          "text": "E-Mail-Adresse",
+          "type": "email",
+          "optional": true,
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "placeholder": "kontakt@unternehmen.de",
+          "labelByRoute": {
+            "J": "Frage J.38",
+            "P": "Frage P.32"
+          }
+        },
+        {
+          "id": "send_results",
+          "label": "Frage J.39 / Frage P.33",
+          "text": "Möchten Sie die Studienergebnisse erhalten?",
+          "type": "radio",
+          "optional": true,
+          "visibleFor": [
+            "J",
+            "P"
+          ],
+          "options": [
+            {
+              "value": "yes",
+              "label": "Ja, bitte per E-Mail zusenden"
+            },
+            {
+              "value": "no",
+              "label": "Nein danke"
+            }
+          ],
+          "labelByRoute": {
+            "J": "Frage J.39",
+            "P": "Frage P.33"
+          }
+        }
+      ]
+    }
+  ]
+}
