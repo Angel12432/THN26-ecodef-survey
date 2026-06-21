@@ -24,7 +24,7 @@
           "label": "Frage 1.1",
           "text": "Name des Unternehmens",
           "type": "text",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "ALL"
           ],
@@ -35,7 +35,7 @@
           "label": "Frage 1.2",
           "text": "Rechtsform",
           "type": "select",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "ALL"
           ],
@@ -75,7 +75,7 @@
           "label": "Frage 1.3",
           "text": "Anzahl Mitarbeiter",
           "type": "select",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "ALL"
           ],
@@ -111,7 +111,7 @@
           "label": "Frage 1.4",
           "text": "Jahresumsatz des Unternehmens",
           "type": "select",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "ALL"
           ],
@@ -226,7 +226,7 @@
           "label": "Einteilung 1",
           "text": "Ist Ihr Unternehmen bereits im Defence-, Sicherheits- oder Dual-Use-Bereich tätig?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "routeQuestion": true,
           "cardClass": "route-card",
           "visibleFor": [
@@ -248,7 +248,7 @@
           "label": "Einteilung 2",
           "text": "Plant Ihr Unternehmen einen Einstieg in den Defence-, Sicherheits- oder Dual-Use-Bereich?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "routeQuestion": true,
           "cardClass": "route-card",
           "visibleFor": [
@@ -350,7 +350,7 @@
           "label": "Frage J.1",
           "text": "Welche Positionierung passt aktuell am besten auf Ihr Unternehmen?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "J"
           ],
@@ -381,7 +381,7 @@
           "label": "Frage P.1",
           "text": "Wie plant Ihr Unternehmen, sich im Defence-/Verteidigungssektor zu positionieren?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "P"
           ],
@@ -1174,7 +1174,7 @@
           "label": "Frage J.20",
           "text": "Wie stark haben die Entwicklungen seit 2022 Ihr laufendes Defence- oder Sicherheitsgeschäft beeinflusst?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "J"
           ],
@@ -1209,7 +1209,7 @@
           "label": "Frage P.14",
           "text": "Wie stark haben die Entwicklungen seit 2022 Ihre Einstiegsentscheidung beeinflusst?",
           "type": "radio",
-          "required": true,
+          "required": false,
           "visibleFor": [
             "P"
           ],
